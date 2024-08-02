@@ -7,7 +7,7 @@ import (
 )
 
 type RepoInterface interface {
-	// GetBooks(req *dto.BookReqDTO) (*dto.GetBooksRespDTO, error)
+	GetBooks(param *GetBooksParam) []model.Book
 }
 
 type Repo struct {

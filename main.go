@@ -34,9 +34,6 @@ func main() {
 
 	// Routes
 	e.GET("/books", h.GetBooks)
-	e.POST("/books", h.GetBooks)
-	e.PUT("/books", h.GetBooks)
-	e.DELETE("/books", h.GetBooks)
 
 	// Start server
 	e.Logger.Fatal(e.Start(":3000"))

@@ -6,10 +6,7 @@ import (
 )
 
 type BooksUCInterface interface {
-	// CreateBook(req *dto.BookReqDTO) (*dto.GetBooksRespDTO, error)
 	GetBooks(req *GetBookRequest) ([]model.Book, error)
-	// UpdateBook(req *dto.BookReqDTO) (*dto.GetBooksRespDTO, error)
-	// DeleteBook(req *dto.BookReqDTO) (*dto.GetBooksRespDTO, error)
 }
 
 type booksUseCase struct {
